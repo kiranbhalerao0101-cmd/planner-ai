@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* FullCalendar overrides */
+.fc {
+  @apply text-sm;
+}
+.fc-toolbar-title {
+  @apply text-lg font-semibold text-slate-800;
+}
+.fc-button {
+  @apply !bg-primary-600 !border-primary-600 !text-white !rounded-md !px-3 !py-1.5 !text-sm !font-medium;
+}
+.fc-button:hover {
+  @apply !bg-primary-700 !border-primary-700;
+}
+.fc-button-active {
+  @apply !bg-primary-800 !border-primary-800;
+}
+.fc-daygrid-event {
+  @apply !rounded !text-xs;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-slate-100;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-400;
+}

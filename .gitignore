@@ -1,0 +1,25 @@
+# Python
+backend/.venv/
+backend/__pycache__/
+backend/app/__pycache__/
+backend/app/routes/__pycache__/
+backend/app/agent/__pycache__/
+backend/tests/__pycache__/
+backend/.pytest_cache/
+backend/planner.db
+*.pyc
+
+# Secrets — NEVER commit these
+backend/.env
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Tunnel executables
+*.exe
+*.zip
+
+# OS
+.DS_Store
+Thumbs.db
